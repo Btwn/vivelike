@@ -53,33 +53,61 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
-	.intro-text {border: solid 1px red;width: 100%;
+	.intro-text {border: solid 1px green;width: 100%;
 		//padding-top: 100px;
 		//padding-bottom: 50px;
-		position: relative;
-		top: 50%;
-		left: 50%;
+		margin-top: 200px;
+		padding-top: 150px;
+  	padding-bottom: 50px;
+  	text-shadow:1px 1px 6px #000;
+		//position: relative;
+		//top: 50%;
+		//left: 50%;
 		//transform: translate(-50%, -50%);
 		.intro-lead-in {
 			@include serif-font;
 			font-style: italic;
-			font-size: 22px;
+			@include font-size(22px);
 			line-height: 22px;
 			margin-bottom: 25px;
 		}
 		.intro-heading {
 			@include heading-font;
 			font-weight: 700;
-			font-size: 50px;
+			@include font-size(36px);
 			line-height: 50px;
 			margin-bottom: 25px;
 		}
 		@media(min-width: #{$small-desktop}){
 			.intro-lead-in {
-				font-size: 32px;
+				@include font-size(32px);
 			}
 			.intro-heading {
-				font-size: 80px;
+				@include font-size(40px);
+			}
+		}
+		@media(min-width: #{$normal-desktop}){
+			.intro-lead-in {
+				@include font-size(32px);
+			}
+			.intro-heading {
+				@include font-size(32px);
+			}
+		}
+		@media(min-width: #{$medium-desktop}){
+			.intro-lead-in {
+				@include font-size(32px);
+			}
+			.intro-heading {
+				@include font-size(32px);
+			}
+		}
+		@media(min-width: #{$large-desktop}){
+			.intro-lead-in {
+				@include font-size(64px);
+			}
+			.intro-heading {
+				@include font-size(80px);
 			}
 		}
 	}

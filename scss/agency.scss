@@ -1,7 +1,13 @@
 @import "variables.scss";
 @import "mixins.scss";
 
+@include container-big();
+
 // Global Components
+
+html {
+    font-size: 16px;
+}
 
 body {
     overflow-x: hidden;

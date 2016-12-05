@@ -1,5 +1,22 @@
 // Mixins
 
+// Bootstrap container big
+@mixin container-big(){
+  @media (min-width: $large-desktop){
+    .container{
+        width: 1770px;
+    }
+  }
+}
+
+
+// Personales
+@mixin font-size($size: $font-size){
+  $rem-size: $size / $font-size;
+  font-size: $size;
+  font-size: $rem-size + 1rem;
+}
+
 // Bootstrap Button Variant
 
 @mixin button-variant($color, $background, $border) {
