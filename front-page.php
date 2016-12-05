@@ -1,7 +1,22 @@
 <?php get_header(); ?>
 
 	<!-- Header -->
-	<header>
+	<header class="header-video">
+    
+      <video class="header-video-container" autoplay loop>
+        <source src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/Webpage 480p.mp4">
+      </video>
+    
+    <div class="container" style="border: solid 1px blue;">
+      <div class="intro-text">
+        <div class="intro-lead-in">Bienvenido a ViveLike!</div>
+        <div class="intro-heading">CRECIENDO CONTIGO</div>
+        <a href="<?php echo home_url(); ?>/registrate" class="page-scroll btn btn-xl">Registrate</a>
+        <a href="#services" class="page-scroll btn btn-xl">Ingresa</a>
+      </div>
+    </div>
+  </header>
+	<!--<header>
 		<div class="container">
 			<div class="intro-text">
 				<div class="intro-lead-in">Welcome To Our Studio!</div>
