@@ -7,7 +7,7 @@
         <source src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/Webpage 480p.mp4">
       </video>
     
-    <div class="container" style="border: solid 1px blue;">
+    <div class="container">
       <div class="intro-text">
         <div class="intro-lead-in">Bienvenido a ViveLike!</div>
         <div class="intro-heading">CRECIENDO CONTIGO</div>

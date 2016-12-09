@@ -53,17 +53,9 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
-	.intro-text {border: solid 1px green;width: 100%;
-		//padding-top: 100px;
-		//padding-bottom: 50px;
-		margin-top: 200px;
-		padding-top: 150px;
-  	padding-bottom: 50px;
-  	text-shadow:1px 1px 6px #000;
-		//position: relative;
-		//top: 50%;
-		//left: 50%;
-		//transform: translate(-50%, -50%);
+	.intro-text {
+		padding: 15px;
+		margin-top: 40vh;
 		.intro-lead-in {
 			@include serif-font;
 			font-style: italic;
@@ -105,9 +97,11 @@
 		@media(min-width: #{$large-desktop}){
 			.intro-lead-in {
 				@include font-size(64px);
+				line-height: 70px;
 			}
 			.intro-heading {
 				@include font-size(80px);
+				line-height: 90px;
 			}
 		}
 	}
